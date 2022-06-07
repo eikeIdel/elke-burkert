@@ -1,0 +1,276 @@
+/* Theme Name: "Simple Portfolio"
+Author: eked
+Version: 1.0
+Text Domain: simpleportfolio
+*/
+
+body {
+  font-family: "Courier Prime", monospace;
+  background-color: white;
+  color: black;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+/* HEADER */
+.nav {
+  display: flex;
+}
+/* FRONT PAGE  */
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+.home-title {
+  margin-bottom: 6rem;
+}
+
+.page_item {
+  list-style-type: none;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* VITA */
+.vita-title {
+  margin-left: -0.5rem;
+}
+
+.vita-name {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.vita-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-left: 0.2rem;
+  /* font-size: 0.8rem; */
+  gap: 0.3rem;
+}
+
+.list-item {
+  display: flex;
+}
+.list-item-datum {
+  min-width: 3rem;
+  max-width: 3rem;
+}
+
+/* CONTACT */
+
+.email {
+  margin: 10rem 2rem;
+}
+
+/* SINGLE-ARBEITEN */
+.single-arbeiten-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-arbeiten-subcontainer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 3rem;
+}
+
+.img-container {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.img-container > img {
+  max-width: 300px;
+}
+
+/* .material-container {
+}
+
+.material {
+}
+
+.date {
+} */
+
+/* ARBEITEN */
+
+.arbeiten-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arbeiten-subcontainer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.arbeiten-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.arbeiten_prev_img {
+  max-width: 300px;
+}
+
+@media (min-width: 450px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* FRONTPAGE */
+  .home-container {
+    font-size: 1.5rem;
+    padding-left: 23%;
+    padding-top: 10%;
+  }
+  /* VITA */
+  .vita-title {
+    margin-left: -1.5rem;
+  }
+  .vita-name {
+    font-size: 1.2rem;
+  }
+  .vita-container {
+    padding-left: 15%;
+    padding-top: 2%;
+    gap: 1.2rem;
+    font-size: 1rem;
+  }
+  .list-item-datum {
+    min-width: 8rem;
+  }
+
+  /* CONTACT */
+
+  .email {
+    font-size: 1.5rem;
+    margin: 20% 20%;
+  }
+}
+
+/* SINGLE-ARBEITEN */
+
+.single-arbeiten-container {
+  height: 90vh;
+  margin-top: 2rem;
+}
+.single-arbeiten-container p {
+  font-size: 0.8rem;
+}
+.single-arbeiten-subcontainer {
+  max-width: 60vw;
+  min-height: 60%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.img-container {
+  gap: 1rem;
+}
+
+.img-container > img {
+  max-height: 25vh;
+}
+.material-container {
+  order: 1;
+}
+
+/* ARBEITEN */
+.arbeiten-container {
+  height: 90vh;
+}
+.arbeiten-subcontainer {
+  max-width: 80vw;
+  min-height: 60%;
+  justify-content: space-between;
+}
+
+.arbeiten-img-container {
+  gap: 1rem;
+}
+
+.arbeiten_prev_img {
+  max-height: 27vh;
+}
+
+@media (min-width: 1200px) {
+  /* SINGLE-ARBEITEN */
+
+  .single-arbeiten-container {
+    margin-top: 2rem;
+  }
+  .single-arbeiten-container p {
+    font-size: 1rem;
+  }
+  .single-arbeiten-subcontainer {
+    max-width: 1000px;
+    min-height: 60%;
+
+    gap: 3rem;
+  }
+
+  .img-container {
+    gap: 3rem;
+  }
+}
+
+/* ARBEITEN */
+
+.arbeiten-subcontainer {
+  max-width: 1000px;
+  min-height: 60%;
+  justify-content: center;
+}
+
+.arbeiten_prev_img {
+  height: 20vh;
+}
